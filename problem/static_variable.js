@@ -23,5 +23,3 @@ p1 = new Product("노트북", 1000);
 p2 = new Product("마우스", 50);
 
 Product.printCount();
-
-8시 30분 다시 풀기
