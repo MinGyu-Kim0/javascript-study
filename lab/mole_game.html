@@ -82,7 +82,7 @@
              */
       function showMole() {
         // 모든 셀에서 두더지를 제거한다 (mole 클래스 제거, 텍스트 비우기).
-        cells.forEach((c) => {
+        cells.forEach(function (c) {
           c.classList.remove("mole");
           c.textContent = "";
         });
@@ -108,8 +108,8 @@
              */
       // 모든 셀에 클릭 이벤트를 등록한다. forEach, addEventListener
       function addClickEvents() {
-        cells.forEach((cell) => {
-          cell.addEventListener("click", () => {
+        cells.forEach(function (cell) {
+          cell.addEventListener("click", function () {
             // 클릭한 셀의 인덱스(dataset.index)와 currentIndex를 비교한다.
             // 두더지가 있는 셀을 클릭했다면 score를 1 증가시킨다.
             if (Number(cell.dataset.index) === currentIndex) {
@@ -138,7 +138,7 @@
              - alert("게임 종료! 점수: " + score)
              */
       // 시작 버튼에 클릭 이벤트를 등록한다.
-      startBtn.addEventListener("click", () => {
+      startBtn.addEventListener("click", function () {
         // 이미 게임이 진행 중이면(timer가 있으면) 함수를 종료한다.
         if (timer) return;
         alert("게임 시작!");
