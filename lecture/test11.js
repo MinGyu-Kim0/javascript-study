@@ -1,16 +1,15 @@
-class Bar{
-    #x = 2; // # = private
+class Bar {
+  #x = 2; // # = private
 
-    set x(argX){
-        if(argX > 0) {
-            this.#x = argX;
-        }
+  set x(argX) {
+    if (argX > 0) {
+      this.#x = argX;
     }
-    get x() {
-        return this.#x;
-    }
+  }
+  get x() {
+    return this.#x;
+  }
 }
-
 
 obj = new Bar();
 obj.x = 20;

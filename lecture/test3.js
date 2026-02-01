@@ -1,5 +1,4 @@
 class Student {
-  
   // 1) Instance Member variable
   // 2) Instance Member method
   // 3) Class Member variable
@@ -7,7 +6,7 @@ class Student {
 
   name = ""; // ES 2022
 
-  // Constructor 
+  // Constructor
   // 동적 타이핑 언어는 new 시 빈 객체를 만들고 생성자(멤버변수)를 갖다 붙힘.
   // (class less object)
   // 인스턴스 변수를 갖다 붙힐때 초기화 작업 시(생성자)에 붙인다.

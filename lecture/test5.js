@@ -1,14 +1,15 @@
 class Student {
-    constructor() { // constructor function
-        this.x = 2;
-    }
+  constructor() {
+    // constructor function
+    this.x = 2;
+  }
 }
 // -> student(생성자 함수)객체가 생성
 // 해당 함수는 prototype 속성을 가지고 prototype은 빈 객체를 가진다.
 class Bar {
-    constructor() {
-        this.x = 20;
-    }
+  constructor() {
+    this.x = 20;
+  }
 }
 // Bar(생성자 함수)가 만들어짐.
 // 그 안에 prototype 속성은 빈 객체(prototype 객체)를 가지고있다.
