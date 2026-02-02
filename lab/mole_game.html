@@ -149,7 +149,7 @@
         // setInterval()을 사용하여 0.8초마다 showMole() 함수를 실행한다.
         timer = setInterval(showMole, 800);
         // setTimeout()을 사용하여 10초 후 게임을 종료한다.
-        setTimeout(() => {
+        setTimeout(function() {
           // 게임 종료 시: clearInterval()로 타이머 중지, timer를 null로 초기화
           clearInterval(timer);
           timer = null;
