@@ -21,21 +21,3 @@ Square.prototype.getArea = function () {
 
 var sq = new Square(5);
 console.log(sq.getArea());              // 25
-
-// Square 클래스 변형
-var Square = function (width) {
-    this.width = width;
-    this.height = width;
-};
-Square.prototype.getArea = function () {
-    return this.width * this.height;
-}
-
-// Rectangle을 상속하는 Square 클래스
-var Square = function (width) {
-    Rectangle.call(this, width, width);
-};
-Square.prototype = new Rectangle();
-
-var rect2 = new sq.constructor(2, 3);
-console.log(rect2);
