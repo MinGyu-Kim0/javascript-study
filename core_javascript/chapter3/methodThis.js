@@ -1,3 +1,4 @@
+// 메서드로서 호출 - 점 표기법, 대괄호 표기법
 var obj = {
   method: function (x) {
     console.log(this, x);
@@ -5,3 +6,23 @@ var obj = {
 };
 obj.method(1); // { method: f } 1
 obj["method"](2); // { method: f } 2
+
+// 메서드 내부에서의 this
+var obj = {
+  methodA: function () {
+    console.log(this);
+  },
+  inner: {
+    methodB: function () {
+      console.log(this);
+    },
+  },
+};
+
+obj.methodA(); // { methodA: f, inner: {...} } (=== obj)
+obj["methodA"](); // { methodA: f, inner: {...} } (=== obj)
+
+obj.inner.methodB(); // { methodB: f } (=== obj.inner)
+obj.inner["methodB"](); // { methodB: f } (=== obj.inner)
+obj["inner"].methodB(); // { methodB: f } (=== obj.inner)
+obj["inner"]["methodB"](); // { methodB: f } (=== obj.inner)
