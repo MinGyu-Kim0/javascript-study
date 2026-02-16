@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      tr,
+      td {
+        border: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>HTML5 table 태그</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>제목 열1</th>
+          <th>제목 열2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>내용 열1</td>
+          <td>내용 열2</td>
+        </tr>
+        <tr>
+          <td>내용 열3</td>
+          <td>내용 열4</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>표의 마지막 열1</td>
+          <td>표의 마지막 열2</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h3>colspan 과 rowspan</h3>
+    <table>
+      <tr>
+        <td colspan="3">열 확장</td>
+      </tr>
+      <tr>
+        <td>열1</td>
+        <td>열2</td>
+        <td>열3</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td rowspan="2">행 확장</td>
+        <td>열1</td>
+      </tr>
+      <tr>
+        <td>열2</td>
+      </tr>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th>제목 열1</th>
+          <th>제목 열2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>내용 열1</td>
+          <td>내용 열2</td>
+        </tr>
+        <tr>
+          <td>내용 열3</td>
+          <td>내용 열4</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>표의 마지막 열1</td>
+          <td>표의 마지막 열2</td>
+        </tr>
+      </tfoot>
+    </table>
+    <h3>form 테스트</h3>
+    <!-- 사용자 입력을 받은 폼이 처리할 url을 action에 작성-->
+    <form action="login.html" method="post">
+      ID:
+      <input type="button" value="입력버튼" name="id" />
+      PW:
+      <input type="text" name="pw" autofocus />
+      <input type="checkbox" name="pw" />
+      <input type="text" name="pw" autocomplete="on" />
+    </form>
+  </body>
+</html>
